@@ -1,0 +1,289 @@
+.square-grid{
+    width: 450px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(83, 45, 52), -10px -10px 10px rgb(79, 61, 61);
+}
+
+.Winner{
+    position: relative;
+    top: -140px;
+    left: 100px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(10, 59, 90);
+    text-shadow: rgb(115, 171, 109) 1px 0 10px;
+
+}
+
+ .image{  
+    top: 40px;
+    width: 0px;
+    /* height: 150px; */
+    position: relative;
+    left: -140px;    
+ }
+
+.Tie{
+    /* position: relative;
+    top: -380px;
+    left: 400px; */
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(10, 59, 90);
+    text-shadow: rgb(115, 171, 109) 1px 0 10px;
+
+}
+
+
+.button-33 {
+    margin-top: 35px;
+    background-color: #9475a1;
+    border-radius: 100px;
+    box-shadow: rgba(17, 51, 31, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 21px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-33:hover {
+    box-shadow: rgba(6, 14, 9, 0.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+.startGame {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.startGame:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.startGame:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.startGame:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.formStyle{
+    min-width: 200px;
+    max-width: 320px;
+    min-height: 260px;
+    max-height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+input{
+    padding: 10px 10px;
+    background-color: #f8f3fa;
+    font-size: 15px;
+    margin-top: 30px;
+    color: rgb(9, 9, 63);
+    border: 2px solid rgb(90, 42, 78);
+}
+
+label{
+    font-size: 18px;
+    background-color: #f8f3fa;
+    font-weight: 700;
+    color: rgb(4, 4, 71);
+    text-shadow: rgb(115, 171, 109) 1px 0 10px;
+
+}
+
+.input2{
+    margin-bottom: 40px;
+}
+
+@media (width < 400px){
+    .square-grid{
+        width:  250px;
+        height: 250px;
+        display: grid;
+        position: relative; 
+        top: 0px;
+        left: 0px; 
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1px;
+        border: 1px solid black;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(83, 45, 52), -10px -10px 10px rgb(79, 61, 61);
+    }
+    .Winner{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        font-size: 40px;
+        /* margin-bottom: 20px; */
+        color: rgb(10, 59, 90);
+        text-shadow: rgb(115, 171, 109) 1px 0 10px;
+    }
+
+    .image{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (400px <= width <= 500px){
+    .square-grid{
+        width:  250px;
+        height: 250px;
+        display: grid;
+        position: relative; 
+        top: 0px;
+        left: 0px; 
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1px;
+        border: 1px solid black;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(83, 45, 52), -10px -10px 10px rgb(79, 61, 61);
+    }
+    .Winner{
+        position: relative;
+        top: -30px;
+        left: 0px;
+        font-size: 40px;
+        /* margin-bottom: 20px; */
+        color: rgb(10, 59, 90);
+        text-shadow: rgb(115, 171, 109) 1px 0 10px;
+    }
+
+    .image{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+  }
+
+  @media (500px <= width <= 600px){
+    .square-grid{
+        width:  250px;
+        height: 250px;
+        display: grid;
+        position: relative; 
+        top: 0px;
+        left: 0px; 
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1px;
+        border: 1px solid black;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(83, 45, 52), -10px -10px 10px rgb(79, 61, 61);
+    }
+    .Winner{
+        position: relative;
+        top: -150px;
+        left: 100px;
+        font-size: 40px;
+        /* margin-bottom: 20px; */
+        color: rgb(10, 59, 90);
+        text-shadow: rgb(115, 171, 109) 1px 0 10px;
+    }
+
+    .image{
+        position: relative;
+        top: 40px;
+        left: -140px;
+    }
+  }
+
+  @media (600px <= width <= 1100px){
+    .square-grid{
+        width:  350px;
+        height: 350px;
+        display: grid;
+        /* position: ; */
+        /* top: 120px;
+        left: 160px; */
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1px;
+        border: 1px solid black;
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(83, 45, 52), -10px -10px 10px rgb(79, 61, 61);
+    }
+
+    .button-33{
+        /* position: relative;
+        top: -3px; */
+        margin-bottom: 10px;
+    }
+
+    .Tie{
+        /* position: relative;
+        top: -200px;
+        left: 70px; */
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: rgb(10, 59, 90);
+        text-shadow: rgb(115, 171, 109) 1px 0 10px;
+    }
+
+    .Winner{
+        position: relative;
+        top: -140px;
+        left: 100px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: rgb(10, 59, 90);
+        text-shadow: rgb(115, 171, 109) 1px 0 10px;
+    }
+
+    .image{
+        position: relative;
+        top: 45px;
+        left:-140px;
+    }
+
+  }
+
+
